@@ -1,0 +1,13 @@
+$TTL	14400
+@	IN	SOA	master6.aburr.io. admin.aburr.io. (
+			      1		; Serial
+			 120		; Refresh
+			    300		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@        IN NS  master6.aburr.io. 
+@        IN NS  slave6.aburr.io.
+10      IN PTR master6.aburr.io.
+11      IN PTR slave6.aburr.io.  
+12      IN PTR profesor.aburr.io.    

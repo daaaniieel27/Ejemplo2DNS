@@ -1,0 +1,15 @@
+acl confiables {
+        127.0.0.1;
+        192.168.20.0/24;
+    
+};
+
+options {
+        directory "/var/cache/bind";
+	recursion yes;
+	forwarders {
+        208.67.220.220;
+    };
+	allow-recursion { confiables; };
+        dnssec-validation yes;
+};

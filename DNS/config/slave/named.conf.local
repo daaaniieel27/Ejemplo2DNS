@@ -1,0 +1,11 @@
+zone "aburr.io" {
+  type slave;
+  masters { 192.168.20.10; };
+  file "/var/lib/bind/db.aburr.io";
+};
+
+zone "206.168.192.in-addr.arpa" {
+  type slave;
+  masters { 192.168.20.10; };
+  file "/var/lib/bind/db.10";
+};
